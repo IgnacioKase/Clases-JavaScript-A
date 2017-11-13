@@ -1,0 +1,34 @@
+Acceso elementos
+  document.getSelector(selcss)
+  document.getSelectors(selcss)
+
+Acceso elementos clásico
+  document.getElementById(id) // 1 Elementos
+  document.getElementByName(names) // N dElementos
+  document.getElementsByTagName(tag) // N Elementos
+  document.getElementsByClassName(className) // N Elementos
+
+Manipulación de elementos
+  element.innerHTML
+  element.classList
+    add
+    remove
+  element.style
+
+Eventos
+  onClick
+    A
+    button
+    input
+    div
+  onFocus
+    inputs
+    A
+    button
+  onSubmit ('submit')
+    form
+  onBlur ('blur')
+    input
+  onChange ('change')
+    change
+  swipe
