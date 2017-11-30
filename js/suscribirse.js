@@ -1,6 +1,7 @@
 var validarEmail = function(ev)
 {
   ev.preventDefault();
+  $('#modal').modal('hide');
   $('.alerta').addClass('d-none');
   $('input#inputEmail').removeClass('alerta-servidor');
   var email = $('#inputEmail').val();
@@ -37,4 +38,6 @@ var validarEmail = function(ev)
   $.ajax(parametros).done(imprimirEmail);
 }
 
-$('form[action="suscripcion.php"]').on('submit', validarEmail);
+//$('form[action="suscripcion.php"]').on('submit', validarEmail);
+
+$('button.modalOk').on('click', validarEmail);

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta charset="utf-8" />
+	<meta name="author" content="Ignacio Kasevich" />
+	<meta name="description" content="Cursos de HTML, JavaScript y CSS a la mano." />
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+	<title>Clase 6 AJS</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<a class="navbar-brand" href="http://kasevich.com.ar/" target="_blank">Kasevich</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon"></span>
+	      </button>
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Disabled</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
+	<main role="main">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner center">
+				<div class="carousel-item active">
+					<img class="d-block w-100 center" src="imgs/1.jpg" alt="First slide">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100 center" src="imgs/2.jpg" alt="Second slide">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100 center" src="imgs/3.jpg" alt="Third slide">
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<h2>Heading</h2>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+				</div>
+				<div class="col-md-4">
+					<h2>Heading</h2>
+					<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+					<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+				</div>
+				<div class="col-md-4">
+					<h2>Heading</h2>
+					<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+					<p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+				</div>
+			</div>
+			<hr/>
+		</div>
+		<div class="container clearfix">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mx-auto">
+				<h2>Suscribase:</h2>
+				<div class="alert alert-danger alerta d-none">
+					<span>Ha ingresado un email invalido</span>
+				</div>
+				<form class="form-signin" action="suscripcion.php" method="post">
+					<label for="inputEmail" class="sr-only">Email</label>
+					<input type="text" id="inputEmail" class="form-control" placeholder="Email">
+					<br/>
+					<a class="btn btn-lg btn-primary btn-block" type="submit" data-toggle="modal" data-target="#modal">Enviar</a>
+				</form>
+			</div>
+		</div>
+		<hr/>
+		<br/>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs12">
+					<h2>Tabla de productos:</h2>
+					<br/>
+					<a href="#" class="cargar-productos btn btn-primary">Cargar productos</a>
+					<br/>
+					<table class="table tabla-productos">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>Descripcion</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Mark</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<hr/>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs12">
+					<form class="form-contacto-validator" action="contacto.php" method="post">
+						<div class="form-group">
+							<label for="Nombre">Nombre</label>
+							<input type="text" name="Nombre" id="Nombre" placeholder="Nombre" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label for="Email">Email</label>
+							<input type="text" name="Email" id="Email" placeholder="Email" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label for="Mensaje">Mensaje</label>
+							<textarea type="text" name="Mensaje" id="Mensaje" placeholder="Mensaje" class="form-control"></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" name="Enviar" value="Enviar" class="btn btn-primary btn-lg"/>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Suscripci&oacute;n</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+				</div>
+				<div class="modal-body">
+					¿Desea suscribirse a nuestro newsletter?
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+					<button type="button" class="btn btn-primary modalOk">Suscribirse</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="container">
+		<p>&copy; Company 2017</p>
+	</footer>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/suscribirse.js"></script>
+	<script src="js/cargar-productos.js"></script>
+	<script src="js/jquery-validator/jquery.validate.min.js"></script>
+	<script src="js/jquery-validator/localization/messages_es_AR.min.js"></script>
+	<script type="text/javascript">
+		$('.form-contacto-validator').validate({
+			rules:{
+				Nombre:{
+					required:true,
+					minlength:5
+				},
+				Email:{
+					required:true,
+					email:true
+				}
+			}
+		})
+	</script>
+	<body>
+
+</html>

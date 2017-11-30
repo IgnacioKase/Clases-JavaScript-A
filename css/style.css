@@ -25,3 +25,13 @@ body {
 {
 	border: 2px solid red;
 }
+
+#modal
+{
+	color: #222;
+}
+
+#carouselExampleIndicators
+{
+		margin-bottom: 30px;
+}
