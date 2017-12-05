@@ -1,0 +1,37 @@
+@import url("bootstrap.css");
+
+@font-face {
+	font-family: Roboto;
+	src: url(../fonts/RobotoSlab-Regular.ttf);
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #37474F;
+	color: white;
+	font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+.jumbotron
+{
+	color: #3d4147;
+}
+
+.alerta-servidor
+{
+	border: 2px solid red;
+}
+
+#modal
+{
+	color: #222;
+}
+
+#carouselExampleIndicators
+{
+		margin-bottom: 30px;
+}
